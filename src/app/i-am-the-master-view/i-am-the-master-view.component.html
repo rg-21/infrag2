@@ -1,0 +1,52 @@
+<igx-navbar class="navigation-bar">
+  <div igxNavbarTitle>My Kanban App</div>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>notifications</igx-icon>
+  </button>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>email</igx-icon>
+  </button>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>account_circle</igx-icon>
+  </button>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>more_vert</igx-icon>
+  </button>
+</igx-navbar>
+<div class="layout row">
+  <div class="column-layout column">
+    <igx-avatar initials="HA" bgColor="var(--igx-secondary-100)" [roundShape]="false" size="small" class="avatar"></igx-avatar>
+    <igx-avatar initials="BR" bgColor="var(--igx-grays-400)" [roundShape]="false" size="small" class="avatar_3"></igx-avatar>
+    <igx-avatar initials="LT" bgColor="var(--igx-grays-400)" [roundShape]="false" size="small" class="avatar_3"></igx-avatar>
+    <igx-avatar initials="WP" bgColor="var(--igx-grays-400)" [roundShape]="false" size="small" class="avatar_3"></igx-avatar>
+  </div>
+  <div class="layout column">
+    <div class="row-layout row">
+      <div class="row-layout_1 row">
+        <button igxButton="icon" type="icon" [disabled]="false" routerLink="/search-bar">
+          <igx-icon>search</igx-icon>
+        </button>
+        <h5 class="title">Fintech Project</h5>
+      </div>
+      <div class="row-layout_1 row">
+        <button igxButton="icon" type="icon" [disabled]="false" routerLink="/i-am-the-master-view/list-view" class="icon-button">
+          <igx-icon>list</igx-icon>
+        </button>
+        <button igxButton="icon" type="icon" [disabled]="false" routerLink="/i-am-the-master-view/kanban-board" class="icon-button">
+          <igx-icon>dashboard</igx-icon>
+        </button>
+      </div>
+      <div class="row-layout_1 row">
+        <p class="igx-typography__subtitle-1 title_1">Project Members</p>
+        <igx-avatar initials="YT" bgColor="var(--igx-warn-500)" [roundShape]="true" size="small" class="avatar_1"></igx-avatar>
+        <igx-avatar initials="BR" bgColor="var(--igx-success-500)" [roundShape]="true" size="small" class="avatar_2"></igx-avatar>
+        <button igxButton="icon" type="icon" [disabled]="false">
+          <igx-icon>add</igx-icon>
+        </button>
+      </div>
+    </div>
+    <div class="views-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

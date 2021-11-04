@@ -1,0 +1,139 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.navigation-bar {
+  height: max-content;
+  min-width: min-content;
+}
+.views-container {
+  min-width: 0;
+  position: relative;
+  min-height: 0;
+  flex-grow: 1;
+}
+.column-layout {
+  min-width: 60px;
+  background-color: var(--igx-primary-500);
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  min-height: 50px;
+}
+.row-layout {
+  overflow: hidden;
+  background-color: var(--igx-grays-200);
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 8px;
+  flex-shrink: 0;
+  min-width: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.layout {
+  flex-grow: 1;
+  align-items: stretch;
+  min-width: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.row-layout_1 {
+  background-color: var(--igx-grays-200);
+  justify-content: space-between;
+  padding: 8px;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.row-layout_2 {
+  padding: 8px;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.row-layout_3 {
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.title {
+  margin: 8px;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+  white-space: pre-wrap;
+}
+.title_1 {
+  margin: 8px 16px 8px 8px;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+  white-space: pre-wrap;
+}
+.avatar {
+  background-color: var(--igx-secondary-100);
+  margin: 26px 0 0;
+  color: var(--igx-surface-500);
+}
+.avatar_1 {
+  background-color: var(--igx-warn-500);
+  margin: 4px;
+  color: var(--igx-surface-500);
+}
+.avatar_2 {
+  background-color: var(--igx-success-500);
+  margin: 4px;
+  color: var(--igx-surface-500);
+}
+.avatar_3 {
+  background-color: var(--igx-grays-400);
+  margin: 26px 0 0;
+  color: var(--igx-surface-500);
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+  white-space: pre-wrap;
+}
+.input-group {
+  margin: 0 0 0 16px;
+  min-width: min-content;
+  flex-shrink: 0;
+  height: max-content;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.button {
+  width: 275px;
+  min-width: min-content;
+  flex-shrink: 0;
+  height: max-content;
+}
+.checkbox {
+  width: max-content;
+  margin: 8px;
+  height: max-content;
+}
+.icon-button {
+  margin: 8px;
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
