@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { IgxNavbarModule, IgxButtonModule, IgxIconModule, IgxAvatarModule, IgxCheckboxModule, IgxInputGroupModule } from 'igniteui-angular';
+import { IgxNavbarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxAvatarModule, IgxCheckboxModule, IgxInputGroupModule } from 'igniteui-angular';
 import { SearchBarComponent } from './search-bar.component';
 
 describe('SearchBarComponent', () => {
@@ -13,7 +13,7 @@ describe('SearchBarComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ SearchBarComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, RouterTestingModule, IgxNavbarModule, IgxButtonModule, IgxIconModule, IgxAvatarModule, IgxCheckboxModule, IgxInputGroupModule ]
+      imports: [ NoopAnimationsModule, FormsModule, RouterTestingModule, IgxNavbarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxAvatarModule, IgxCheckboxModule, IgxInputGroupModule ]
     })
     .compileComponents();
   });

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IgxButtonModule, IgxIconModule, IgxListModule, IgxAvatarModule } from 'igniteui-angular';
+import { IgxButtonModule, IgxRippleModule, IgxIconModule, IgxListModule, IgxAvatarModule } from 'igniteui-angular';
 import { TableViewComponent } from './table-view.component';
 
 describe('TableViewComponent', () => {
@@ -12,7 +12,7 @@ describe('TableViewComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ TableViewComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxButtonModule, IgxIconModule, IgxListModule, IgxAvatarModule ]
+      imports: [ NoopAnimationsModule, FormsModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxListModule, IgxAvatarModule ]
     })
     .compileComponents();
   });

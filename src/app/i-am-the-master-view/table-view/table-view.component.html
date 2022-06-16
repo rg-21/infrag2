@@ -1,16 +1,24 @@
-<div class="row-layout row">
-  <button igxButton="fab" type="fab" [disabled]="false" class="floating-action-button">
-    <igx-icon>add</igx-icon>
+<div class="row-layout group">
+  <button igxButton="fab" igxRipple class="button">
+    <igx-icon>
+      add
+    </igx-icon>
   </button>
 </div>
-<div class="row-layout_1 row"></div>
-<div class="row-layout_2 row">
+<div class="row-layout group_1"></div>
+<div class="row-layout group_2">
   <igx-list class="list">
-    <igx-list-item *ngFor="let item of northwindCustomers" class="list-item">
-      <igx-avatar icon="person" bgColor="var(--igx-grays-400)" [roundShape]="true" size="small" igxListThumbnail class="avatar"></igx-avatar>
-      <h4 igxListLineTitle>{{ item.contactName }}</h4>
-      <p igxListLineSubTitle>{{ item.contactTitle }}</p>
-      <igx-icon font="material" [active]="true" igxListAction class="icon">star</igx-icon>
+    <igx-list-item [isHeader]="false" *ngFor="let item of northwindCustomers">
+      <span igxListThumbnail>
+        <igx-avatar icon="person" [roundShape]="true"></igx-avatar>
+      </span>
+      <span igxListLineTitle>{{ item.contactName }}</span>
+      <span igxListLineSubTitle>{{ item.contactTitle }}</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          star
+        </igx-icon>
+      </span>
     </igx-list-item>
   </igx-list>
 </div>

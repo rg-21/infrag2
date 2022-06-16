@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
-import { IgxNavbarModule, IgxButtonModule, IgxIconModule, IgxAvatarModule, IgxCheckboxModule, IgxInputGroupModule } from 'igniteui-angular';
+import { IgxNavbarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxAvatarModule, IgxCheckboxModule, IgxInputGroupModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     IgxNavbarModule,
     IgxButtonModule,
+    IgxRippleModule,
     IgxIconModule,
     IgxAvatarModule,
     IgxCheckboxModule,
