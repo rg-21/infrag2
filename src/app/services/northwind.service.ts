@@ -6,7 +6,7 @@ import { Northwind } from './northwind';
   providedIn: 'root'
 })
 export class NorthwindService {
-  public getData(tableName: string): Observable<any[]> {
+  public getData(tableName: string): Observable<any> {
     return of(Northwind[tableName]);
   }
 }

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxIconModule } from 'igniteui-angular';
+import { IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxIconModule } from 'igniteui-angular';
 import { KanbanBoardComponent } from './kanban-board.component';
 
 describe('KanbanBoardComponent', () => {
@@ -12,7 +12,7 @@ describe('KanbanBoardComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ KanbanBoardComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxIconModule ]
+      imports: [ NoopAnimationsModule, FormsModule, IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxIconModule ]
     })
     .compileComponents();
   });

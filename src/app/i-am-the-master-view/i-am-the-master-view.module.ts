@@ -3,28 +3,29 @@ import { CommonModule } from '@angular/common';
 
 import { IAmTheMasterViewRoutingModule } from './i-am-the-master-view-routing.module';
 import { IAmTheMasterViewComponent } from './i-am-the-master-view.component';
-import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
-import { IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxIconModule, IgxListModule, IgxNavbarModule } from 'igniteui-angular';
-import { FormsModule } from '@angular/forms';
 import { ListViewComponent } from './list-view/list-view.component';
+import { IgxListModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxCardModule, IgxNavbarModule } from 'igniteui-angular';
+import { FormsModule } from '@angular/forms';
 import { TableViewComponent } from './table-view/table-view.component';
+import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
 
 @NgModule({
   declarations: [
     IAmTheMasterViewComponent,
-    KanbanBoardComponent,
     ListViewComponent,
-    TableViewComponent
+    TableViewComponent,
+    KanbanBoardComponent
   ],
   imports: [
     CommonModule,
     IAmTheMasterViewRoutingModule,
-    IgxCardModule,
-    IgxAvatarModule,
-    IgxButtonModule,
-    IgxIconModule,
-    FormsModule,
     IgxListModule,
+    IgxAvatarModule,
+    FormsModule,
+    IgxButtonModule,
+    IgxRippleModule,
+    IgxIconModule,
+    IgxCardModule,
     IgxNavbarModule
   ]
 })

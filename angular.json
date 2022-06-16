@@ -38,9 +38,6 @@
             ]
           },
           "configurations": {
-            "es5": {
-              "tsConfig": "tsconfig-es5.app.json"
-            },
             "production": {
               "budgets": [
                 {
@@ -81,9 +78,6 @@
             },
             "development": {
               "browserTarget": "task-management:build:development"
-            },
-            "es5": {
-              "browserTarget": "task-management:build:es5"
             }
           },
           "defaultConfiguration": "development"

@@ -1,68 +1,68 @@
 :host {
   height: 100%;
   display: flex;
+  justify-content: flex-start;
   align-items: stretch;
+  align-content: flex-start;
 }
 .row-layout {
+  display: flex;
+}
+.group {
+  justify-content: flex-start;
   align-items: stretch;
-  padding: 8px;
-  flex-grow: 1;
+  align-content: flex-start;
   position: relative;
-  min-height: 50px;
+  padding: 8px;
   min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
 }
 .column-layout {
-  align-items: center;
-  padding: 4px;
-  margin: 4px;
-  flex-shrink: 0;
-  background-color: var(--igx-grays-300);
-  position: relative;
-  min-height: 50px;
-  min-width: 50px;
-  height: max-content;
+  display: flex;
+  flex-direction: column;
 }
-.actions {
-  min-height: 40px;
+.group_1 {
+  background-color: hsla(var(--igx-grays-300));
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  margin: 4px;
+  padding: 4px;
+  height: max-content;
   min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
 }
 .card {
-  min-width: 320px;
   margin: 8px;
   width: 320px;
   height: max-content;
+  min-width: 320px;
 }
-.avatar {
-  background-color: var(--igx-secondary-900);
-  color: var(--igx-primary-900);
-}
-.avatar_1 {
-  background-color: var(--igx-success-500);
-  color: var(--igx-grays-900);
-}
-.avatar_2 {
-  background-color: var(--igx-primary-500);
-  color: var(--igx-grays-900);
-}
-.title {
+.h6 {
   margin: 8px;
   height: max-content;
   min-width: min-content;
-  white-space: pre-wrap;
+}
+.avatar {
+  color: hsla(var(--igx-grays-900));
+  background-color: hsla(var(--igx-primary-500));
+}
+.avatar_1 {
+  color: hsla(var(--igx-grays-900));
+  background-color: hsla(var(--igx-success-500));
+}
+.avatar_2 {
+  color: hsla(var(--igx-primary-900));
+  background-color: hsla(var(--igx-grays-900));
 }
 .avatar_3 {
-  background-color: var(--igx-grays-900);
-  color: var(--igx-primary-900);
+  color: hsla(var(--igx-primary-900));
+  background-color: hsla(var(--igx-secondary-900));
 }
-.card-flex-column {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-}
-.row {
-  display: flex;
-}
-.column {
-  display: flex;
-  flex-direction: column;
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
 }
